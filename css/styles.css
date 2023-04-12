@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+
+:root {
+  --teksti: #333333;
+  --tausta: #eeeeee;
+  --dark: #444444;
+  --highlight: #87af19;
+  --tekstivaal: #dddddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.v-center {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.h-right {
+  position: absolute;
+  right: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--tausta);
+  color: var(--teksti);
+}
+
+header {
+  background-color: var(--dark);
+  color: var(--tekstivaal);
+  padding: 10px;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: var(--highlight) solid 5px;
+}
+
+header .logo {
+  float: left;
+  font-size: 2em;
+
+
+}
+
+header .logo img {
+  height: 70px;
+  padding: 5px;
+  display: block;
+  float: left;
+}
+
+
+header nav a {
+  display: inline-block;
+  font-size: 1.5em;
+  color: var(--tekstivaal);
+  text-decoration: none;
+  padding: 20px 0.5em;
+}
+
+header nav a:hover {
+  color: var(--teksti);
+  background-color: var(--highlight);
+}
+
+ul {
+  text-align: left;
+}
+
+/* main */
+main {
+  font-size: 1.0em;
+  line-height: 1.5em;
+  
+  text-align: left;
+  padding-left: 350px;
+  padding-right: 350px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+  
+  }
+
+  
+
+/* section */
+
+.section{
+  max-width: 1100px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+
+
+/* taulukko */
+
+.taulukko {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+.taulukko td, th {
+  border: 1px solid var(--dark);
+  text-align: left;
+  padding: 8px;
+}
+
+/* taulukko loppuu */
+
+/* footer */
+footer {
+  background-color: var(--dark);
+  color: var(--tekstivaal);
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  border-top: var(--highlight) 3px solid;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
